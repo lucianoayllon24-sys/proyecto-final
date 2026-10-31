@@ -1,0 +1,19 @@
+/* Página de sedes */
+.sedes { padding: 4rem 5%; }
+h1 { margin-bottom: 2rem; font-size: 2.2rem; }
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.sede {
+  background: #171728;
+  border-radius: 10px;
+  padding: 1.6rem;
+  border-left: 4px solid #ff3d5a;
+}
+.sede h3 { margin-bottom: .5rem; }
+.sede p { color: #a3a3bd; font-size: .92rem; }

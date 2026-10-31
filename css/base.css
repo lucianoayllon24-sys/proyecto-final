@@ -1,0 +1,52 @@
+/* Estilos compartidos por todas las páginas: reset, encabezado y pie */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0b14;
+  color: #f1f1f7;
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: 1rem 5%;
+  background: #08080f;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo { display: flex; align-items: center; gap: .5rem; font-weight: bold; letter-spacing: 2px; }
+nav a { margin-left: 1.2rem; color: #a3a3bd; }
+nav a:hover, nav a.activo { color: #ff3d5a; }
+
+.btn {
+  display: inline-block;
+  background: #ff3d5a;
+  color: #fff;
+  border: 0;
+  padding: .7rem 1.6rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn:hover { background: #e0304c; }
+
+main { min-height: 70vh; }
+h1, h2 { text-align: center; }
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #08080f;
+  color: #a3a3bd;
+  font-size: .9rem;
+}

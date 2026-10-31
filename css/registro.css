@@ -1,0 +1,23 @@
+/* Página de registro */
+.registro {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 4rem 5%;
+}
+h1 { margin-bottom: 2rem; font-size: 2.2rem; }
+
+form { display: grid; gap: 1rem; }
+label { display: grid; gap: .3rem; font-size: .92rem; color: #a3a3bd; }
+input {
+  padding: .7rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #2a2a45;
+  background: #171728;
+  color: #f1f1f7;
+  font-size: 1rem;
+}
+input:focus { outline: 2px solid #ff3d5a; }
+
+#mensaje { min-height: 1.4em; text-align: center; font-size: .92rem; }
+#mensaje.ok { color: #6ee7a0; }
+#mensaje.error { color: #ff8a8a; }

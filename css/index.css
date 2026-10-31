@@ -1,0 +1,62 @@
+/* ----- Carrusel (cartelera del sitio) ----- */
+.carousel-item { min-height: 460px; }
+.slide-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1000px;
+  min-height: 460px;
+  margin: 0 auto;
+  padding: 3rem 12% 4rem;
+}
+.slide-texto { max-width: 520px; }
+.slide-texto h2 { text-align: left; font-size: 2.4rem; margin: .6rem 0; }
+.slide-texto p { color: #e4e4f0; margin-bottom: 1.4rem; }
+.etiqueta {
+  display: inline-block;
+  background: rgba(255, 255, 255, .18);
+  border: 1px solid rgba(255, 255, 255, .4);
+  padding: .15rem .9rem;
+  border-radius: 999px;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.slide-poster { width: 200px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, .5); }
+.slide-emoji { font-size: 9rem; line-height: 1; }
+.beneficios { list-style: none; margin-bottom: 1.4rem; display: grid; gap: .4rem; color: #e4e4f0; }
+
+/* Un color de fondo para cada diapositiva */
+.slide-estreno   { background: linear-gradient(135deg, #1b1147, #ff3d5a); }
+.slide-confiteria{ background: linear-gradient(135deg, #b3260e, #ff8a3d); }
+.slide-sedes     { background: linear-gradient(135deg, #0b3a5c, #7c5cff); }
+.slide-registro  { background: linear-gradient(135deg, #14532d, #1b1147); }
+
+@media (max-width: 700px) {
+  .slide-contenido { flex-direction: column-reverse; text-align: center; padding: 2rem 14% 4rem; }
+  .slide-texto h2 { text-align: center; font-size: 1.9rem; }
+  .slide-poster { width: 110px; }
+  .slide-emoji { font-size: 4.5rem; }
+  .beneficios { text-align: left; }
+}
+
+/* ----- Accesos rápidos ----- */
+.accesos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 5%;
+}
+.accesos a {
+  background: #171728;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.accesos a:hover { border-color: #ff3d5a; }
+.accesos h3 { margin-bottom: .4rem; font-size: 1.15rem; }
+.accesos p { color: #a3a3bd; font-size: .9rem; margin: 0; }

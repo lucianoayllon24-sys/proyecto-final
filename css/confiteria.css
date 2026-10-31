@@ -1,0 +1,31 @@
+/* Página de confitería */
+.confiteria { max-width: 1000px; margin: 0 auto; padding: 4rem 5%; }
+h1 { margin-bottom: 1.5rem; font-size: 2.2rem; }
+h2 { margin: 2.5rem 0 1.2rem; font-size: 1.5rem; }
+
+.oferta {
+  background: linear-gradient(90deg, #ff3d5a, #ff8a3d);
+  text-align: center;
+  font-weight: bold;
+  padding: .9rem 1rem;
+  border-radius: 8px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.2rem;
+}
+.producto {
+  background: #171728;
+  border-radius: 10px;
+  padding: 1.6rem 1rem;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.producto:hover { border-color: #ff3d5a; }
+.producto.destacado { border-color: #ff8a3d; }
+.emoji { font-size: 2.6rem; }
+.producto h3 { margin: .4rem 0; }
+.producto p { color: #a3a3bd; font-size: .9rem; }
+.producto .precio { color: #ff8a3d; font-weight: bold; font-size: 1.1rem; margin-top: .5rem; }

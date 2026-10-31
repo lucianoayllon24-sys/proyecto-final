@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartelera | Cineverse</title>
+  <link rel="icon" type="image/svg+xml" href="../Favicon/favicon.svg" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/cartelera.css" />
+</head>
+<body>
+
+  <header>
+    <a href="../index.html" class="logo"><img src="../Favicon/favicon.svg" alt="" width="32" height="32" /> CINEVERSE</a>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="cartelera.html" class="activo">Cartelera</a>
+      <a href="confiteria.html">Confitería</a>
+      <a href="sedes.html">Sedes</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="registro.html">Registro</a>
+    </nav>
+  </header>
+
+  <main class="cartelera">
+    <h1>Cartelera</h1>
+    <p class="subtitulo">Elige una película, la fecha, la hora y tus butacas.</p>
+
+    <!-- Las películas se dibujan aquí desde js/cartelera.js -->
+    <div class="movies" id="peliculas"></div>
+
+    <!-- Panel de compra: aparece al elegir una película -->
+    <section class="reserva" id="reserva" hidden>
+
+      <div class="reserva-cabecera">
+        <img id="rPoster" src="" alt="" />
+        <div>
+          <h2 id="rTitulo"></h2>
+          <p id="rSala"></p>
+        </div>
+        <button type="button" class="cerrar" id="cerrar" aria-label="Cerrar">✕</button>
+      </div>
+
+      <div id="pasos">
+        <div class="paso">
+          <h3>1. Elige la fecha</h3>
+          <div class="opciones" id="fechas"></div>
+        </div>
+
+        <div class="paso" id="pasoHora" hidden>
+          <h3>2. Elige la hora</h3>
+          <div class="opciones" id="horas"></div>
+        </div>
+
+        <div class="paso" id="pasoButacas" hidden>
+          <h3>3. Elige tus butacas</h3>
+          <div class="leyenda">
+            <span><i class="libre"></i> Libre</span>
+            <span><i class="elegida"></i> Elegida</span>
+            <span><i class="ocupada"></i> Ocupada</span>
+          </div>
+          <div class="pantalla">PANTALLA</div>
+          <div class="mapa-scroll"><div class="mapa" id="mapa"></div></div>
+
+          <div class="resumen">
+            <p id="resumenTexto">Aún no has elegido butacas.</p>
+            <button type="button" class="btn" id="confirmar" disabled>Confirmar compra</button>
+          </div>
+          <p id="mensaje" role="status"></p>
+        </div>
+      </div>
+
+      <!-- Entrada final -->
+      <div class="ticket" id="ticket" hidden>
+        <h3> ¡Compra confirmada!</h3>
+        <div class="ticket-datos" id="ticketDatos"></div>
+        <button type="button" class="btn" id="otra">Comprar otra entrada</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Cineverse</footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/cartelera.js"></script>
+</body>
+</html>
